@@ -3,6 +3,7 @@ import Employee from './Employee';
 import StartButton from './StartButton';
 import Stationary from './Stationary';
 import Products from './Products';
+import Prodcuts2 from './Products2';
 
 function App() {
     // For Question Number 1
@@ -30,6 +31,9 @@ function App() {
             ------------------------
             {/* Question Number 4 */}
             <Products/>
+            ------------------------
+            {/* Question Number 5 */}
+            <Prodcuts2/>
         </div>
     );
 }

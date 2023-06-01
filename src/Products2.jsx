@@ -1,5 +1,4 @@
-function Products() {
-  // For Question Number 4
+function Prodcuts2() {
   const products = [
     { name: 'Perk', quantity: 10, sales: 7 },
     { name: 'Pepsi', quantity: 10, sales: 20 },
@@ -10,16 +9,17 @@ function Products() {
 
   return (
     <div>
-      <h3>Product Names</h3>
       <ul>
         {products
-          .sort((a, b) => a.sales - b.sales)
+          .filter((products) => products.sales > products.quantity)
           .map((product) => (
-            <li key={product.name}>{product.name}</li>
+            <li key={product.name}>
+              Name: {product.name}, Quantity: {product.quantity}, Sales: {product.sales}
+            </li>
           ))}
       </ul>
     </div>
   );
 }
 
-export default Products;
+export default Prodcuts2;
