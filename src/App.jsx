@@ -2,6 +2,7 @@ import './App.css';
 import Employee from './Employee';
 import StartButton from './StartButton';
 import Stationary from './Stationary';
+import Products from './Products';
 
 function App() {
     // For Question Number 1
@@ -15,6 +16,7 @@ function App() {
     // For Question Number 2
     const header = 'Stationary Items';
     const items = ['pen', 'pencil', 'ruler', 'eraser'];
+
     return (
         <div>
             {/* Question Number 1 */}
@@ -27,7 +29,7 @@ function App() {
             <Stationary header={header} items={items} />
             ------------------------
             {/* Question Number 4 */}
-            
+            <Products/>
         </div>
     );
 }
