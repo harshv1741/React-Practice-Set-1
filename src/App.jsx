@@ -6,6 +6,7 @@ import Products from './Products';
 import Prodcuts2 from './Products2';
 import Student from './Student';
 import ImageWithCaption from './ImageWithCaption';
+import EmployeeDetails from './EmployeeDetails';
 
 function App() {
   // For Question Number 1
@@ -46,6 +47,10 @@ function App() {
       ------------------------
       {/* Question Number 7 */}
       <Student />
+      ------------------------
+      {/* Question Number 8 */}
+      <EmployeeDetails />
+      ------------------------
     </div>
   );
 }
