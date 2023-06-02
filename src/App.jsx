@@ -5,6 +5,7 @@ import Stationary from './Stationary';
 import Products from './Products';
 import Prodcuts2 from './Products2';
 import Student from './Student';
+import ImageWithCaption from './ImageWithCaption';
 
 function App() {
   // For Question Number 1
@@ -19,6 +20,10 @@ function App() {
   const header = 'Stationary Items';
   const items = ['pen', 'pencil', 'ruler', 'eraser'];
 
+  // For Question Number 4
+  const imageLink = 'https://cdn.pixabay.com/photo/2023/03/18/10/43/plum-blossoms-7860381_1280.jpg';
+  const caption = 'Spring Flowers';
+
   return (
     <div>
       {/* Question Number 1 */}
@@ -31,13 +36,16 @@ function App() {
       <Stationary header={header} items={items} />
       ------------------------
       {/* Question Number 4 */}
-      <Products />
+      <ImageWithCaption image={imageLink} caption={caption} />
       ------------------------
       {/* Question Number 5 */}
-      <Prodcuts2 />
+      <Products />
       ------------------------
       {/* Question Number 6 */}
-      <Student/>
+      <Prodcuts2 />
+      ------------------------
+      {/* Question Number 7 */}
+      <Student />
     </div>
   );
 }
