@@ -48,7 +48,7 @@ function App() {
       {/* Question Number 7 */}
       <Student />
       ------------------------
-      {/* Question Number 8 */}
+      {/* Question Number 8, 9, 10, 11 */}
       <EmployeeDetails />
       ------------------------
     </div>

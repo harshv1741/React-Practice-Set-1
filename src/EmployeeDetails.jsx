@@ -57,14 +57,25 @@ function EmployeeDetails() {
       salary: 22200
     }
   ];
+
+  const totalSalary = employees.reduce((accumulator, employee) => accumulator + employee.salary, 0);
+
   return (
     <div>
       <h3>List of Employees</h3>
       <ul>
+        {/* Solution For Question 8, 9, 10, 11 Combined t*/}
         {employees.map((employee) => (
-          <li key={employee.level}>
+          <li
+            key={employee.name}
+            style={{
+              backgroundColor: employee.level === 2 ? 'orange' : '',
+              border: employee.designation === 'President' ? '4px solid orange' : '',
+              padding: '4px'
+            }}
+          >
             Name: {employee.name}, level: {employee.level}, dept: {employee.dept}, designation: {employee.designation},
-            salary: {employee.salary}
+            salary: {employee.salary}, Total Salary Expense: {totalSalary}
           </li>
         ))}
       </ul>
